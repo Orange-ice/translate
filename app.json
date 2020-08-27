@@ -1,9 +1,7 @@
 {
   "pages":[
     "pages/translate/translate",
-    "pages/history/history",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/history/history"
   ],
   "window":{
     "backgroundTextStyle":"light",
