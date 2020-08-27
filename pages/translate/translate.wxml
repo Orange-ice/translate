@@ -1,0 +1,25 @@
+<!--pages/test/test.wxml-->
+
+<view class="translateWrapper">
+	<form catchsubmit="formSubmit" catchreset="formReset">
+
+		<picker name="picker" bindchange="bindPickerChange" value="{{index || 1}}" range="{{objectArray}}" range-key="name">
+			<view class="picker">
+				<text class="tips">翻译为：</text>
+				<text class="options">{{objectArray[index].name || objectArray[1].name}}</text>
+				<text class="little">(点击可切换语言)</text>
+			</view>
+		</picker>
+
+    <textarea type="text" name="textarea" placeholder="请输入要翻译内容"></textarea>
+		<!-- <input type="text" placeholder="请点击输入" name="input"></input> -->
+		<button type="primary" formType="submit">查询</button>
+		<button type="default" formType="reset">重置</button>
+	</form>
+	<view class="result">
+		<view class="resultTip">翻译结果为：</view>
+		<view class="output">{{output}}</view>
+	</view>
+</view>
+
+<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>

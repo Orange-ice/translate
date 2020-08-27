@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/translate/translate",
+    "pages/history/history",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3FB676",
+    "navigationBarTitleText": "小橙翻译",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#07C160",
+    "list": [{
+      "pagePath": "pages/translate/translate",
+      "text": "翻译",
+      "iconPath": "images/translate.png",
+      "selectedIconPath": "images/translateSelected.png"
+    },{
+      "pagePath": "pages/history/history",
+      "text": "历史",
+      "iconPath": "images/history.png",
+      "selectedIconPath": "images/historySelected.png"
+    }]
+  }
+}

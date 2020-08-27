@@ -1,0 +1,11 @@
+<!--pages/history/history.wxml-->
+
+<view class="title">翻译历史</view>
+<view class="wrapper" wx:if="{{history !== ''}}">
+	<view wx:for="{{history}}" wx:key="index" class="item">
+		<view class="query">{{item.query}}</view>
+		<view class="translate">{{item.translate}}</view>
+	</view>
+</view>
+
+<view wx:else class="tips">亲，你还没有使用过翻译噢</view>
